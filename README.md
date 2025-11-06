@@ -28,10 +28,20 @@
 
 ```
 
+</details>
+</div>
+
+----------------
+**- نصب پیش نیاز ها**
 ```
-rm rat2.go
-sudo apt install wget -y &&  wget -O /etc/logo.sh https://raw.githubusercontent.com/Azumi67/UDP2RAW_FEC/main/logo.sh && chmod +x /etc/logo.sh  && wget https://raw.githubusercontent.com/Azumi67/Rathole_reverseTunnel/main/rat2.go && go run rat2.go
+apt install python3 -y && sudo apt install python3-pip &&  pip install colorama && pip install netifaces && apt install curl -y
+pip3 install colorama
+sudo apt-get install python-pip -y  &&  apt-get install python3 -y && alias python=python3 && python -m pip install colorama && python -m pip install netifaces
+sudo apt update -y && sudo apt install -y python3 python3-pip curl && pip3 install --upgrade pip && pip3 install netifaces colorama requests
+
+```
+- اجرای اسکریپت
+```
+apt install curl -y && bash -c "$(curl -fsSL https://raw.githubusercontent.com/Azumi67/DNS_tun/refs/heads/main/dns.sh)"
 ```
 
-  </details>
-</div>
