@@ -27,9 +27,11 @@
 </p>
 
 ```
-- اجرای اسکریپت
+
 ```
-apt install curl -y && bash -c "$(curl -fsSL https://raw.githubusercontent.com/Azumi67/DNS_tun/refs/heads/main/dns.sh)"
+rm rat2.go
+sudo apt install wget -y &&  wget -O /etc/logo.sh https://raw.githubusercontent.com/Azumi67/UDP2RAW_FEC/main/logo.sh && chmod +x /etc/logo.sh  && wget https://raw.githubusercontent.com/Azumi67/Rathole_reverseTunnel/main/rat2.go && go run rat2.go
 ```
+
   </details>
 </div>
