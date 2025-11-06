@@ -14,15 +14,8 @@
 - امکان ترکیب با icmp و dns
 - مناسب برای گیم )
   
------------------------
- ![6348248](https://github.com/Azumi67/PrivateIP-Tunnel/assets/119934376/398f8b07-65be-472e-9821-631f7b70f783)د
- <div align="right">
-  <details>
-    <summary><strong><img src="https://github.com/Azumi67/Rathole_reverseTunnel/assets/119934376/fcbbdc62-2de5-48aa-bbdd-e323e96a62b5" alt="Image"> </strong>نحوه استفاده از اسکریپت</summary>
 
-------------------
 
-</div>
 
 ----------------
 - اجرای اسکریپت
