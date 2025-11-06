@@ -1,89 +1,58 @@
-
-<p align="center">
-  <img src="https://github.com/Azumi67/PortforwardSec/assets/119934376/8993e9dc-6b78-4543-850c-6c5e6dcc9843" alt="OIP">
-</p>
-<div align="center">
-
-Hello Azumi Desu !!
-
-</div>
-
 ![R (2)](https://github.com/Azumi67/PrivateIP-Tunnel/assets/119934376/a064577c-9302-4f43-b3bf-3d4f84245a6f)
-نام پروژه : پورت فوروارد TCP & UDP با IPSEC
----------------------------------------------------------------
-
-
-**این پروژه برای استفاده شخصی و گیم انلاین میباشد**
-
-**در این پروژه بعدا تغییراتی انجام میشود**
-
+نام پروژه : تانل dns 
+--
 ![check](https://github.com/Azumi67/PrivateIP-Tunnel/assets/119934376/13de8d36-dcfe-498b-9d99-440049c0cf14)
 **امکانات**
-- پورت فورواد TCP و UDP
-- امکان فوروارد چندین پورت همزمان
-- امکان پورت فوروارد بین چندین سرور خارج و ایران بر روی چندین پورت
-- دارای connection pool و goroutines برای performance بهتر
-- داری tcp no delay ( با true فعال میشود و با false غیرفعال میشود)
-- داری codereedsolomon برای udp برای کاهش پکت لاس
-- امکان ترکیب با ipsec و لوکال ایپی تانل برای امنیت بیشتر
-- امکان ترکیب با تانل های داخلی 64
-- امکان ترکیب با icmp و dns
-- مناسب برای گیم 
-- این پورت فوروارد باید با IPSEC استفاده شود وگرنه استفاده نکنید ( من برای استفاده شخصی از این پورت فوروارد استفاده میکنم. فروشنده هستید استفاده نکنید)
+پورت فوروارد به صورتی مولتی پورت
+امکان فوروارد چندین پورت همزمان
+دارای connection pool و goroutines برای performance بهتر
+داری tcp no delay ( با true فعال میشود و با false غیرفعال میشود)
+امکان ترکیب با ipsec و لوکال ایپی تانل برای امنیت بیشتر
+امکان ترکیب با تانل های داخلی 64
+امکان ترکیب با icmp و dns
+مناسب برای گیم
+
 -----------------------
-
+ ![6348248](https://github.com/Azumi67/PrivateIP-Tunnel/assets/119934376/398f8b07-65be-472e-9821-631f7b70f783)
+**آموزش استفاده از اسکریپت**
  <div align="right">
   <details>
-    <summary><strong>توضیحات</strong></summary>
-  
------------------------------------- 
- <div align="right">
-   
-- این برنامه برای یادگیری بیشتر و ipsec نوشته شده است و این برنامه در طی زمان، بهبود میابد. اگر دوست داشتید استفاده کنید
-- در حال حاضر من از این برنامه برای گیم آنلاین هم استفاده میکنم.
-- اسکریپت هم برایش میسازم.
-- هم چنین udp با استفاده از سوکت و buffer size و codereedsolomon اضافه شده است.
-- به udp، کانکشن پول و goroutines برای performance بهتر اضافه شد.
-- تنها برای UDP نیاز است که سوکت نصب شده باشد و برای TCP نیازی نیست.
-- در udp از reedsolomon برای کاهش پکت لاس استفاده شده که به عبارتی از two data shards and two parity shards استفاده شده است
-- از هدر استفاده نکنید چون شاید مشکل دار شوید. در هر صورت برای گیم به هدر نیازی ندارم. بعدا به این پروژه xray core را در صورت امکان اضافه میکنم .
-- اگر با ایپی 4 جواب نگرفتید ، با ایپی 6 native یا لوکال تست نمایید. من خودم شخصا با همشون جواب گرفتم
-- این پورت فوروارد با لوکال و ipsec استفاده خواهد شد(برای امنیت بیشتر)
-- این پورت فوروارد بعدا با تانل داخلی هم ترکیب خواهد شد
-- به این برنامه tcp no delay هم برای پینگ بهتر اضافه شد. بافر سایز هم توسط کامند لاین، قابل تغییر میباشد و همچنین از تعداد goroutines 100 برای performance استفاده میکند
-- بعدا این پروژه اپدیت خواهد شد و برای ترکیب با پروژه های دیگر،‌ feature های جدید در صورت نیاز اضافه خواهد شد.
-- اگر‌ از این پروژه استفاده کردید و مشکلی دیدید میتوانید در قسمت issues یا ایمیل به اطلاع من برسانید
-  </details>
+    <summary><strong><img src="https://github.com/Azumi67/Rathole_reverseTunnel/assets/119934376/fcbbdc62-2de5-48aa-bbdd-e323e96a62b5" alt="Image"> </strong>نحوه استفاده از اسکریپت</summary>
+
+------------------
+<p align="right">
+  <img src="https://github.com/user-attachments/assets/18956680-bcf1-4f02-add4-0acd30fe0abd" alt="Image" />
+</p>
+
+- نخست پسورد را وارد میکنم
+- ایپی پرایوت ورژن 4 را وارد میکنم
+- ساب دامین که پشت ان ایپی سرور خارج را قرار داده ام، وارد میکنم
+- ساب دامین را tunnel.iodine.azumi.com (همانی که ساختم)، قرار میدهم.
+- مقدار mtu را به صورت دیفالت 1130 وارد میکنم. شما میتوانید تغییر دهید
+- نام دیوایس را dns2 قرار میدهم
+<p align="right">
+  <img src="https://github.com/user-attachments/assets/bc5be169-837b-4990-b1a9-aabad81c1b31" alt="Image" />
+
+- نام پسورد را ازومی قرار میدهم
+- پابلیک ایپی سرور خارج را وارد میکنم
+- نام ساب دامینی را که در سرور وارد کردم اینجا هم وارد میکنم
+- مقدار فرگمنت را 100 قرار میدهم شما میتوانید 200 قرار بدهید
+- مقدار dns query را txt یا null قرار میدهم
+- مقدار keepalive را 30 ثانیه قرار میدهم
+- نام دیوایس را مشخص میکنم
+</details>
 </div>
 
-**مرسی از engboy که در تست به من کمک بسیاری کردند(به عنوان Contributor نامشون اورده شده است)**
+----------------
+**- نصب پیش نیاز ها**
+```
+apt install python3 -y && sudo apt install python3-pip &&  pip install colorama && pip install netifaces && apt install curl -y
+pip3 install colorama
+sudo apt-get install python-pip -y  &&  apt-get install python3 -y && alias python=python3 && python -m pip install colorama && python -m pip install netifaces
+sudo apt update -y && sudo apt install -y python3 python3-pip curl && pip3 install --upgrade pip && pip3 install netifaces colorama requests
 
----------------------
-<div align="right">
-  <details>
-    <summary><strong>چندین نکته</strong></summary>
-    
-  ------------------------------------ 
-   <div align="right">
-
-- اگر به هر دلیلی udp در سرور شما لیمیت بود، از geneve و ایپی 4 یا ایپی 6 استفاده نمایید.
-- اگر باز هم لیمیت سرور ایران شما زیاد بود ، به صورت kcp و tcp برای گیم استفاده نمایید.
-- برای tcp نیازی به نصب هیچ پروگرامی ندارید و فقط udp از پایه سوکت استفاده میکند.
-- امکانش هست که در سرور شما، بعضی از روش های لوکال بسته یا لیمیت شده باشد (فرقی بین اسکریپت با manual نیست)،‌پس بهتره از روش های جایگزین استفاده کنید و بعد پورت فوروارد انجام دهید.
-  </details>
-</div>
-
------------------------------------- 
-  ![6348248](https://github.com/Azumi67/PrivateIP-Tunnel/assets/119934376/398f8b07-65be-472e-9821-631f7b70f783)
-**روش اجرا**
--
-
- <div align="right">
-  <details>
-    <summary><strong><img src="https://github.com/Azumi67/Rathole_reverseTunnel/assets/119934376/fcbbdc62-2de5-48aa-bbdd-e323e96a62b5" alt="Image"> </strong>برای سیستم عامل ubuntu 22 به بالا و debian 12</summary>
-  
------------------------------------- 
-
-
-  </details>
-</div>
+```
+- اجرای اسکریپت
+```
+apt install curl -y && bash -c "$(curl -fsSL https://raw.githubusercontent.com/Azumi67/DNS_tun/refs/heads/main/dns.sh)"
+```
