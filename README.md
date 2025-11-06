@@ -19,7 +19,7 @@
 ----------------
 - اجرای اسکریپت
 ```
-apt install curl -y && bash -c "$(curl -fsSL https://raw.githubusercontent.com/Azumi67/DNS_tun/refs/heads/main/dns.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/mzydev/GOT-TUNNEL/main/got-tun.sh)""
 ```
 
 ## 🙏 حمایت با کریپتو  
