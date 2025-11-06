@@ -31,3 +31,5 @@
 ```
 apt install curl -y && bash -c "$(curl -fsSL https://raw.githubusercontent.com/Azumi67/DNS_tun/refs/heads/main/dns.sh)"
 ```
+  </details>
+</div>
