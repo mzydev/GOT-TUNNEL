@@ -17,6 +17,10 @@
 -----------------------
  ![6348248](https://github.com/Azumi67/PrivateIP-Tunnel/assets/119934376/398f8b07-65be-472e-9821-631f7b70f783)
 **آموزش استفاده از اسکریپت**
+
+- قبل از اینکه اسکریپت را اجرا کنم باید یک دامین تهیه کنم. به طور مثال دامین من azumi.com است . حالا داخل dns provider باید یک NS با عنوان tunnel و مقدار iodine.azumi.com. ( حتما در اخر مقدار یک dot قرار دهید) و یک رکورد A با عنوان iodine و ایپی پابلیک سرور خارج قرار میدهم. در اسکریپت از ساب دامین tunnel.iodine.azumi.com استفاده میکنم. اگر فرایند را درست انجام دهید، تانل برای شما باید فعال شود و بین دو پرایوت ایپی پینگ برقرار شود.
+- به این صورت میشود tunnel.iodine.azumi.com. << NS و رکورد A >> iodine.azumi.com که پشت ان ایپی پلبلیک سرور خارج قرار میگیرد
+- حالا برای ساب دامین هم میشود از tunnel.azumi.com و هم tunnel.iodine.azumi.com استفاده کرد
  <div align="right">
   <details>
     <summary><strong><img src="https://github.com/Azumi67/Rathole_reverseTunnel/assets/119934376/fcbbdc62-2de5-48aa-bbdd-e323e96a62b5" alt="Image"> </strong>نحوه استفاده از اسکریپت</summary>
@@ -26,8 +30,22 @@
   <img src="https://github.com/user-attachments/assets/18956680-bcf1-4f02-add4-0acd30fe0abd" alt="Image" />
 </p>
 
-```
+- نخست پسورد را وارد میکنم
+- ایپی پرایوت ورژن 4 را وارد میکنم
+- ساب دامین که پشت ان ایپی سرور خارج را قرار داده ام، وارد میکنم
+- ساب دامین را tunnel.iodine.azumi.com (همانی که ساختم)، قرار میدهم.
+- مقدار mtu را به صورت دیفالت 1130 وارد میکنم. شما میتوانید تغییر دهید
+- نام دیوایس را dns2 قرار میدهم
+<p align="right">
+  <img src="https://github.com/user-attachments/assets/bc5be169-837b-4990-b1a9-aabad81c1b31" alt="Image" />
 
+- نام پسورد را ازومی قرار میدهم
+- پابلیک ایپی سرور خارج را وارد میکنم
+- نام ساب دامینی را که در سرور وارد کردم اینجا هم وارد میکنم
+- مقدار فرگمنت را 100 قرار میدهم شما میتوانید 200 قرار بدهید
+- مقدار dns query را txt یا null قرار میدهم
+- مقدار keepalive را 30 ثانیه قرار میدهم
+- نام دیوایس را مشخص میکنم
 </details>
 </div>
 
@@ -44,4 +62,3 @@ sudo apt update -y && sudo apt install -y python3 python3-pip curl && pip3 insta
 ```
 apt install curl -y && bash -c "$(curl -fsSL https://raw.githubusercontent.com/Azumi67/DNS_tun/refs/heads/main/dns.sh)"
 ```
-
